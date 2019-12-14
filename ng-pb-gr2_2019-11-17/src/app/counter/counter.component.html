@@ -1,0 +1,7 @@
+<h2 [class.green]="count >= 10"
+    [class.kamil]="true"
+    class="moja-klasa">{{count}}</h2>
+<!-- <input type="text" [value]="count" /> -->
+{{ displayNiceCounter() }}
+<button (click)="minus()" [disabled]="count == 0">minus</button>
+<button (click)="plus()">plus</button>

@@ -1,0 +1,8 @@
+<!-- [ngClass]="{ 'green': count > 5 }" -->
+
+<h2 class="red"
+    [class.green]="count > 5"
+    *ngIf="count > 0">{{ count }}</h2>
+
+<button (click)="plus()">plus</button>
+<button (click)="minus()" [disabled]="count <= 0">minus</button>
